@@ -28,7 +28,7 @@ public class MergeBinaryTrees{
     }
     private static void printTree(TreeNode treeHead) {
         if(treeHead==null) return;
-        //we use in-order traveral to print the tree
+        //we use in-order traveral to print the tree (left, root, right)
         printTree(treeHead.left);
         System.out.print("inorder: "+treeHead.data+"\n"); 
         printTree(treeHead.right); 
